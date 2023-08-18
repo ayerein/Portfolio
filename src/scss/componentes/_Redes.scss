@@ -1,0 +1,19 @@
+@import './Constantes';
+
+.contenedor-redes{
+    position: fixed;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    .icon-redes{
+        height: 1.5rem;
+        margin-bottom: 2vh;
+        margin-left: 6vw;
+        filter: $color-icons;
+        &:hover{
+            filter: $color-icons-hover;
+        }
+    }
+}

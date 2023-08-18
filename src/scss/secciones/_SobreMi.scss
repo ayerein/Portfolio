@@ -1,0 +1,53 @@
+@import '../componentes/Constantes';
+
+.contenedor-sobre-mi{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15vh 15vw 3vw 15vw;
+    background-color: $color-background-secundario;
+    .sobre-mi-titulo{
+        font-family: 'Urbanist';
+        font-size: 1.5rem;
+        color: $color-primario;
+    }
+    .contenedor-descripcion-cursos{
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vh 5vw;
+        .sobre-mi-descripcion{
+            margin-bottom: .8rem;
+            line-height: 1.3rem;
+        }
+    }
+    .contenedor-descripcion-cursos{
+        background-color: $color-background-oscuro; 
+        .curso-individual{
+           margin: 1vh 0;
+           .titulo-curso{
+            color: $color-primario;
+           }
+        }
+    }
+    .contenedor-boton-sobre-mi{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .sobre-mi-boton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 15vw;
+            height: 8vh;
+            background-color: $color-primario;
+            &:hover{
+                cursor: pointer;
+                background-color: $color-secundario;
+            }
+        }
+    }
+}
+
