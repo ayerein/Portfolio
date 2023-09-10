@@ -45,6 +45,7 @@
             background-color: $color-primario;
             border: none;
             margin: 5vh;
+            transition: 0.5s;
             &:hover{
                 cursor: pointer;
                 background-color: $color-secundario;
@@ -73,9 +74,32 @@
             background-color: $color-primario;
             border: none;
             margin: 5vh;
+            transition: 0.5s;
             &:hover{
                 cursor: pointer;
                 background-color: $color-secundario;
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px){
+    .contenedor-contacto{
+        padding: 8vh 0 0 0;
+        .contenedor-inputs{
+            .input-contacto-enviar{
+                margin: 10% 0 0 0;
+                width: 45%;
+            }
+        }
+        .mensaje-enviado{
+            justify-content: center;
+            .text-mensaje-enviado{
+                margin: 0 10%;
+            }
+            .boton-mensaje-enviado{
+                width: 45%;
             }
         }
     }

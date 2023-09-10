@@ -1,7 +1,7 @@
 
-export const Redes = () => {
+export const Redes = ({ clase }) => {
     return(
-        <div className="contenedor-redes">
+        <div className={clase}>
 
             <a href="https://www.linkedin.com/in/ayerein/"  target="_blank" rel="noopener noreferrer">
                 <img src="/icons/linkedin.svg" alt="linkedin" className="icon-redes"/>

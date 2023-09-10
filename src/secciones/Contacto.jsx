@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { EnviarMensaje } from '../componentes/EnviarMensaje';
-import { MensajeEnviado } from '../componentes/MensajeEnviado';
+import { EnviarMensaje } from '../componentes/Contacto/EnviarMensaje';
+import { MensajeEnviado } from '../componentes/Contacto/MensajeEnviado';
 
 export const Contacto = () => {
     const [ contactForm, setContactForm ] = useState(true)
@@ -8,11 +8,12 @@ export const Contacto = () => {
     return(
         <section className="contenedor-contacto" id="contacto">
             {
-            contactForm ?
-            <EnviarMensaje setContactForm={setContactForm}/>
-            :
-            <MensajeEnviado setContactForm={setContactForm}/>
+                contactForm ?
+                <EnviarMensaje setContactForm={setContactForm}/>
+                :
+                <MensajeEnviado setContactForm={setContactForm}/>
             }
+
         </section>
     )
 }

@@ -1,4 +1,4 @@
-import { MisCursos } from "../data/DataCursos"
+import { MisCursos } from "../../data/DataCursos"
 
 export const VerCursos = () => {
     return(

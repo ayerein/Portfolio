@@ -1,6 +1,6 @@
 @mixin font{
     font-family: 'Comfortaa', cursive;
-    color: #d6d6d6;
+    color: $color-font;
 }
 
 @mixin hover{
@@ -9,6 +9,7 @@
     }
 }
 
+$color-font: #d6d6d6;
 $color-background-secundario: rgb(24, 24, 24);
 $color-background-oscuro: rgb(12, 12, 12);
 

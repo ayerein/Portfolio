@@ -16,8 +16,4 @@ export const MisCursos = [
         nombre: 'Desarrollo Web Inicial',
         descripcion: 'Primer tramo de Argentina Programa 4.0.'
     },
-    {
-        nombre: 'Curso Ingles',
-        descripcion: 'Actualmente cursando. Curso de Ingles en el Centro Universitario de Idiomas, Argentina Programa 4.0.'
-    },
 ]

@@ -10,8 +10,8 @@ import { SobreMi } from './secciones/SobreMi'
 function App() {
   return (
     <>
+      <Redes clase="contenedor-redes"/>
       <NavBar />
-      <Redes />
       <Home />
       <SobreMi />
       <Proyectos />

@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { VerCursos } from "../componentes/VerCursos"
-import { VerDescripcion } from "../componentes/VerDescripcion"
+import { VerCursos } from "../componentes/SobreMi/VerCursos"
+import { VerDescripcion } from "../componentes/SobreMi/VerDescripcion"
 
 export const SobreMi = () => {
     const [ cursos, setCursos ] = useState(false)

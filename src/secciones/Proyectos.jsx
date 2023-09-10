@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { ProyectosCards } from "../componentes/ProyectosCards"
+import { ProyectosCards } from "../componentes/Proyectos/ProyectosCards"
 import { DataProyectos } from "../data/DataProyectos"
-import { ProyectoIndividual } from "../componentes/ProyectoIndividual"
+import { ProyectoIndividual } from "../componentes/Proyectos/ProyectoIndividual"
 
 export const Proyectos = () => {
     const [ id, setId ] = useState()

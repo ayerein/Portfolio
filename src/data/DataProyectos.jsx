@@ -3,7 +3,7 @@ export const DataProyectos = [
     {
         img: '/Proyectos/Proyecto-lcds-react.png',
         descripcion: 'Proyecto personal en el cual integro los proyectos de Desarrollo Web y de JavaScript, utilizando React.',
-        nombre: 'Proyecto LCDS',
+        nombre: 'Proyecto Banda',
         url: 'https://github.com/ayerein/LaCisuradeSilvioReactJs',
         id: 1,
     },
@@ -24,7 +24,7 @@ export const DataProyectos = [
     {
         img: '/Proyectos/Proyecto-lcds-js.png',
         descripcion: 'Proyecto creado en el curso de JavaScript.',
-        nombre: 'Lcds JavaScript',
+        nombre: 'Banda JavaScript',
         url: 'https://github.com/ayerein/LaCisuradeSilvioJavaScript',
         id: 4,
     },

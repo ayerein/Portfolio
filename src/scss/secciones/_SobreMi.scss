@@ -10,21 +10,19 @@
     .sobre-mi-titulo{
         font-family: 'Urbanist';
         font-size: 1.5rem;
-        color: $color-primario;
+        color: $color-primario
     }
     .contenedor-descripcion-cursos{
-        height: 70%;
+        min-height: 70%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         padding: 5vh 5vw;
+        background-color: $color-background-oscuro; 
         .sobre-mi-descripcion{
             margin-bottom: .8rem;
             line-height: 1.3rem;
         }
-    }
-    .contenedor-descripcion-cursos{
-        background-color: $color-background-oscuro; 
         .curso-individual{
            margin: 1vh 0;
            .titulo-curso{
@@ -42,6 +40,7 @@
             align-items: center;
             width: 15vw;
             height: 8vh;
+            transition: 0.5s;
             background-color: $color-primario;
             &:hover{
                 cursor: pointer;
@@ -51,3 +50,39 @@
     }
 }
 
+
+@media (max-width:768px){
+    .contenedor-sobre-mi{
+        height: 100vh;
+        width: 100vw;
+        padding: 0 5%;
+        .sobre-mi-titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            font-size: 2rem;
+        }
+        .contenedor-descripcion-cursos{
+            padding: 4vh 5vw;
+            min-height: 55%;
+            .sobre-mi-descripcion{
+                line-height: 1.4rem;
+            }
+            .curso-individual{
+                .titulo-curso{
+                    margin-bottom: .6rem;
+                }
+            }
+        }
+        .contenedor-boton-sobre-mi{
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .sobre-mi-boton{
+                width: 35vw;
+            }
+        }
+    }
+}
