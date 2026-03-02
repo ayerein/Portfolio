@@ -1,4 +1,4 @@
-@import '../componentes/Constantes';
+@use '../componentes/Constantes' as *;
 
 .contenedor-sobre-mi{
     height: 100vh;
@@ -16,17 +16,18 @@
         min-height: 70%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: center;
         padding: 5vh 5vw;
         background-color: $color-background-oscuro; 
         .sobre-mi-descripcion{
             margin-bottom: .8rem;
-            line-height: 1.3rem;
+            line-height: 1.5rem;
         }
         .curso-individual{
            margin: 1vh 0;
            .titulo-curso{
             color: $color-primario;
+            margin: 5px 0;
            }
         }
     }
@@ -44,7 +45,7 @@
             background-color: $color-primario;
             &:hover{
                 cursor: pointer;
-                background-color: $color-secundario;
+                background-color: $color-boton-hover;
             }
         }
     }

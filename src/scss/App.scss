@@ -1,9 +1,9 @@
 
-@import './componentes/General';
-@import './componentes/NavBar';
-@import './componentes/Redes';
+@use './componentes/General';
+@use './componentes/NavBar';
+@use './componentes/Redes';
 
-@import './secciones/Home';
-@import './secciones/SobreMi';
-@import './secciones/Proyectos';
-@import './secciones/Contacto';
+@use './secciones/Home';
+@use './secciones/SobreMi';
+@use './secciones/Proyectos';
+@use './secciones/Contacto';

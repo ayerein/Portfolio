@@ -12,7 +12,6 @@ export const NavBar = () => {
         <>
                 <nav className={nav ? "contenedor-nav" : "contenedor-nav nav-background"} id="contenedor-nav">
                     <div className="logo-nav" id="logo-nav">
-                        <a href="#" className="logo">AR</a>
                         {
                             nav ?
                             <img src="icons/menu.svg"  onClick={()=> setNav(!nav)} className="abrir-nav" alt="Abrir Menu" id="abrir-menu" />

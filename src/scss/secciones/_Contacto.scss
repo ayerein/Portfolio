@@ -1,4 +1,4 @@
-@import '../componentes/Constantes';
+@use '../componentes/Constantes' as *;
 
 .contenedor-contacto{
     height: 100vh;
@@ -48,7 +48,7 @@
             transition: 0.5s;
             &:hover{
                 cursor: pointer;
-                background-color: $color-secundario;
+                background-color: $color-boton-hover;
             }
         }
     }

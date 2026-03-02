@@ -13,7 +13,11 @@ export const MisCursos = [
         descripcion: 'Curso de React Js cursado en CoderHouse.'
     },
     {
-        nombre: 'Desarrollo Web Inicial',
-        descripcion: 'Primer tramo de Argentina Programa 4.0.'
+        nombre: 'SQL',
+        descripcion: 'Curso de SQL cursado en CoderHouse.'
+    },
+    {
+        nombre: 'Programación Backend I: Desarrollo Avanzado de Backend',
+        descripcion: 'Cursado en CoderHouse. Primer tramo de Tres.'
     },
 ]

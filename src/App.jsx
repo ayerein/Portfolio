@@ -1,5 +1,5 @@
 
-import './scss/App.css'
+import './scss/App.scss'
 import { Contacto } from './secciones/Contacto'
 import { Home } from './secciones/Home'
 import { NavBar } from './componentes/NavBar'

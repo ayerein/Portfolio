@@ -1,23 +1,25 @@
 
-export const ProyectoIndividual = ({ id, setId, DataProyectos }) => {
-    let proyectoElegido = DataProyectos.find((proyecto) => proyecto.id === id)
-    let screen = window.matchMedia("(min-width: 768px)").matches
+export const ProyectoIndividual = ({ cerrar, proyectoElegido }) => {
     
     return (
         <div className="contenedor-card-individual">
-            <p className="proyecto-elegido-titulo-mobile">{proyectoElegido.nombre}</p>
-            <img src={proyectoElegido.img} alt={proyectoElegido.nombre} className="proyecto-elegido-img"/>
-            <div className="contenedor-descripcion-elegido">
+            <div className="contenedor-titulo-card-individual">
                 <p className="proyecto-elegido-titulo">{proyectoElegido.nombre}</p>
-                <p className="proyecto-elegido-descripcion">{proyectoElegido.descripcion}</p>
-                <a href={proyectoElegido.url} target="_blank" className="proyecto-elegido-boton-repo">Ver Repositorio</a>
+                <button className="contenedor-boton-volver" onClick={cerrar} aria-label="Cerrar">
+                    <span className="proyecto-elegido-boton-volver">x</span>
+                </button>
             </div>
-            <div className="contenedor-boton-volver" onClick={()=>setId(null)}>
-                <p className="proyecto-elegido-boton-volver">
-                    {
-                        screen ? "x" : "Volver"
-                    }
-                </p>
+            <div className="contenido-card-individual">
+                <div className="contenedor-img-individual">
+                    <img src={proyectoElegido.img} alt={proyectoElegido.nombre} className="proyecto-elegido-img"/>
+                </div>
+                <div className="contenedor-descripcion-elegido">
+                    <p className="proyecto-elegido-descripcion">{proyectoElegido.descripcion}</p>
+                </div>
+            </div>
+            <div className="contenedor-botones">
+                <a href={proyectoElegido.url} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo">Ver Repositorio</a>
+                <a href={proyectoElegido.demo} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo">Ver Web</a>
             </div>
         </div>
     )

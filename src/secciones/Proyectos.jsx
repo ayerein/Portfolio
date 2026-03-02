@@ -5,12 +5,13 @@ import { ProyectoIndividual } from "../componentes/Proyectos/ProyectoIndividual"
 
 export const Proyectos = () => {
     const [ id, setId ] = useState()
+    let proyectoElegido = DataProyectos.find((proyecto) => proyecto.id === id)
 
     return(
         <section className="contenedor-proyectos" id="proyectos">
             {
                 id ?
-                    <ProyectoIndividual id={id} setId={setId} DataProyectos={DataProyectos}/>
+                    <ProyectoIndividual id={id} cerrar={()=>setId(null)} proyectoElegido={proyectoElegido}/>
                 :
                 <div className="contenedor-cards">
                 {

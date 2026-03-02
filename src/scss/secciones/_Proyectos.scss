@@ -1,4 +1,4 @@
-@import '../componentes/Constantes';
+@use '../componentes/Constantes' as *;
 
 .contenedor-proyectos{
   height: 100vh;
@@ -29,61 +29,85 @@
       }
     }
   }
+
   .contenedor-card-individual{
     height: 70%;
     width: 70%;
     margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $color-background-secundario;
-    padding: 0 3vw;
-    .proyecto-elegido-titulo-mobile{
-      display: none;
-    }
-    .proyecto-elegido-img{
-      height: 80%;
-      width: 50%;
-    }
-    .contenedor-descripcion-elegido{
-      width: 37%;
-      height: 80%;
-      margin: 0 5%;
+    display: grid;
+    grid-template-rows: 15% 65% 20%;
+    .contenedor-titulo-card-individual{
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
+      align-items: flex-end;
+      height: 100%;
+      width: 100%;
+      position: relative;
       .proyecto-elegido-titulo{
         font-size: 1.2rem;
         color: $color-primario;
       }
-      .proyecto-elegido-descripcion{
-        line-height: 1.3rem;
+      .contenedor-boton-volver{
+        position: absolute;
+        top: 45px;
+        right: 50px;
+        background: none;
+        border: none;
+        .proyecto-elegido-boton-volver{
+          text-align: center;
+          font-size: 18px;
+          transition: 0.5s;
+          &:hover{  
+            cursor: pointer;
+            color: $color-primario;
+          }
+        }
       }
+    }
+    .contenido-card-individual{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      .contenedor-img-individual{
+        width: 28vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .proyecto-elegido-img{
+          height: 70%;
+          width: 100%;
+        }
+        
+      }
+      .contenedor-descripcion-elegido{
+        width: 28vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .proyecto-elegido-descripcion{
+          line-height: 1.3rem;
+          width: 100%;
+        }
+        
+      }
+    }
+    .contenedor-botones{
+      display: flex;
+      justify-content: space-evenly;
       .proyecto-elegido-boton-repo{
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        width: 15vw;
+        width: 28vw;
         height: 8vh;
         background-color: $color-primario;
         transition: 0.5s;
         &:hover{
-          background-color: $color-secundario;
-        }
-      }
-    }
-    .contenedor-boton-volver{
-      width: 3%;
-      height: 5%;
-      margin-bottom: 45vh;
-      .proyecto-elegido-boton-volver{
-        text-align: center;
-        transition: 0.5s;
-        &:hover{  
-          cursor: pointer;
-          color: $color-primario;
+          background-color: $color-boton-hover;
         }
       }
     }

@@ -1,4 +1,4 @@
-@import '../componentes/Constantes';
+@use '../componentes/Constantes' as *;
 
 .contenedor-home{
     height: 100vh;
