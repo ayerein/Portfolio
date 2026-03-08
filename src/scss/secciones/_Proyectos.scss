@@ -126,41 +126,54 @@
       grid-template-rows: repeat(3, 1fr);
     }
     .contenedor-card-individual{
-      flex-direction: column;
-      padding: 0;
-      .proyecto-elegido-titulo-mobile{
+      grid-template-rows: 15% 60% 25%;
+      .contenedor-titulo-card-individual{
+        align-items: center;
+        .proyecto-elegido-titulo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 15%;
+          color: $color-primario;
+          font-size: 1.3rem;
+        }
+        .contenedor-boton-volver{
+          background-color: $color-background-oscuro;
+          position: absolute;
+          top: 10px;
+          right: 15px;
+        }
+      }
+      .contenido-card-img{
         display: flex;
+        flex-direction: column;
+        .contenedor-img-individual{
+          height: 100%;
+          .proyecto-elegido-img{
+            height: 100%;
+            width: 100%;
+            padding: 5% 5%;
+          }
+        }
+        .contenedor-descripcion-elegido{
+          width: 100%;
+          height: 35%;
+          display: grid;
+          place-items: center;
+            .proyecto-elegido-descripcion{
+              text-align: center;
+              width: 90%;
+            }
+        }
+      }
+      .contenedor-botones{
         justify-content: center;
         align-items: center;
-        height: 15%;
-        color: $color-primario;
-        font-size: 1.3rem;
-      }
-      .proyecto-elegido-img{
-        height: 50%;
-        width: 100%;
-        padding: 5% 5%;
-      }
-      .contenedor-descripcion-elegido{
-        width: 90%;
-        height: 35%;
-        .proyecto-elegido-titulo{
-          display: none;
-        }
         .proyecto-elegido-boton-repo{
           width: 45%;
+          margin: 0 5px;
         }
       }
-      .contenedor-boton-volver{
-        margin-bottom: 0;
-        height: 10%;
-        width: 100%;
-        background-color: $color-background-oscuro;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
     }
   }
 }

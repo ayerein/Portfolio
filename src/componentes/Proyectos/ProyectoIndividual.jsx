@@ -9,7 +9,7 @@ export const ProyectoIndividual = ({ cerrar, proyectoElegido }) => {
                     <span className="proyecto-elegido-boton-volver">x</span>
                 </button>
             </div>
-            <div className="contenido-card-individual">
+            <div className="contenido-card-img">
                 <div className="contenedor-img-individual">
                     <img src={proyectoElegido.img} alt={proyectoElegido.nombre} className="proyecto-elegido-img"/>
                 </div>
@@ -18,8 +18,8 @@ export const ProyectoIndividual = ({ cerrar, proyectoElegido }) => {
                 </div>
             </div>
             <div className="contenedor-botones">
-                <a href={proyectoElegido.url} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo">Ver Repositorio</a>
-                <a href={proyectoElegido.demo} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo">Ver Web</a>
+                <a href={proyectoElegido.url} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo boton-i">Ver Repositorio</a>
+                <a href={proyectoElegido.demo} target="_blank" rel="noreferrer" className="proyecto-elegido-boton-repo boton-d">Ver Web</a>
             </div>
         </div>
     )
